@@ -54,6 +54,9 @@ const main = ({ showVars = true } = {}): webpack.Configuration => {
         {
           test: /\.node$/,
           use: "node-loader",
+          
+          
+          
         },
         getTypeScriptLoader({}, /\.ts$/),
         ...iconsAndImagesWebpackRules(),
